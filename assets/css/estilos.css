@@ -1,0 +1,590 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #fff;
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif; }
+
+header {
+  background-color: transparent;
+  position: fixed;
+  height: 4.375em;
+  width: 100%;
+  z-index: 55;
+  -webkit-transition: background-color 0.5s; }
+  header .navbar-light .navbar-toggler-icon {
+    color: #fff; }
+  header .menu {
+    height: 90px;
+    background: rgba(34, 34, 34, 0.75);
+    font-family: "Roboto", sans-serif;
+    -webkit-transition: margin-left 0.5s; }
+    header .menu button {
+      border: none; }
+    header .menu .fas {
+      color: #FFA500; }
+    header .menu .logo {
+      margin-left: 3em;
+      margin-right: 9.5em;
+      padding: 0; }
+      header .menu .logo img {
+        width: 150px; }
+    header .menu .nav-item {
+      margin-left: 1em;
+      margin-right: 1em; }
+      header .menu .nav-item a {
+        position: relative; }
+      header .menu .nav-item .nav-link {
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        padding-top: 0.7em;
+        font-size: 1.22em;
+        text-shadow: 0.1em 0.1em 0.05em black; }
+        header .menu .nav-item .nav-link:hover, header .menu .nav-item .nav-link:focus {
+          color: #FFA500; }
+    header .menu .navbar-toggler {
+      font-size: 1.4em;
+      color: white;
+      border-color: white; }
+    header .menu .logomenu-center {
+      text-align: center; }
+      header .menu .logomenu-center img {
+        display: block;
+        margin-left: 1.875em;
+        margin-right: 1.875em;
+        margin-top: 7.5em;
+        width: 18em;
+        height: 18em;
+        -webkit-transition: width 0.5s, height 0.5s, margin-right 0.5s, margin-top 0.5s; }
+
+.main {
+  padding-top: 3em; }
+  .main .banner {
+    margin-top: -3em;
+    padding-top: 8em;
+    padding-bottom: 2em;
+    background: url("../img/fondo.jpg") #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+    .main .banner .center .big {
+      font-family: "Roboto", sans-serif;
+      margin-top: 1.2em;
+      font-size: 5em;
+      font-weight: 500;
+      color: #fff;
+      text-shadow: 0.1em 0.1em 0.05em black; }
+    .main .banner .center .medium {
+      font-family: "Roboto", sans-serif;
+      margin-top: -0.7em;
+      font-size: 3em;
+      color: #fff;
+      font-weight: 400;
+      text-shadow: 0.1em 0.1em 0.05em black; }
+    .main .banner .center .small {
+      font-family: "Roboto", sans-serif;
+      margin-top: -0.7em;
+      font-size: 1.8em;
+      color: #fff;
+      text-shadow: 0.1em 0.1em 0.05em black; }
+    .main .banner .center .boton {
+      display: flex;
+      justify-content: center; }
+      .main .banner .center .boton .boton1 {
+        padding-right: 1.7em;
+        padding-left: 1.7em;
+        margin-top: 1em;
+        margin-bottom: 5.2em;
+        margin-right: 1.5em;
+        background-color: #FFA500;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.3em;
+        font-weight: 500;
+        border-radius: 1em; }
+  .main .whatwedo {
+    padding-top: 0.5em;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 1em; }
+    .main .whatwedo .texto .h1,
+    .main .whatwedo .texto .h2,
+    .main .whatwedo .texto .text {
+      color: #000; }
+    .main .whatwedo .texto .h2 {
+      color: #FFA500; }
+    .main .whatwedo .texto .h1 {
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 1em; }
+    .main .whatwedo .texto .text {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.2em; }
+  .main .services {
+    margin-top: 0em;
+    margin-bottom: 2em; }
+    .main .services .text {
+      margin-bottom: 0em; }
+      .main .services .text .h2 {
+        color: #FFA500; }
+      .main .services .text .h1 {
+        color: #000;
+        font-family: "Roboto", sans-serif; }
+    .main .services .carousel1 .carousel-control-prev .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
+    .main .services .carousel1 .carousel-control-next .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
+    .main .services .carousel1 .carousel-inner img {
+      margin: 0 auto;
+      width: 80%; }
+    .main .services .carousel2 .carousel-control-prev .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
+    .main .services .carousel2 .carousel-control-next .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
+    .main .services .carousel2 .carousel-inner img {
+      margin: 0 auto;
+      width: 90%; }
+  .main .services2 {
+    background-color: whitesmoke;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+    .main .services2 .titulo {
+      font-family: "Roboto", sans-serif;
+      color: #FFA500;
+      font-size: 2.5em; }
+    .main .services2 .texto {
+      text-align: justify;
+      color: #000;
+      font-family: "Roboto", sans-serif; }
+    .main .services2 .imagen img {
+      max-width: 100%;
+      height: 350px; }
+    .main .services2 .boton .boton1 {
+      padding-right: 1.7em;
+      padding-left: 1.7em;
+      margin-top: 1em;
+      margin-bottom: 5.2em;
+      margin-right: 1.5em;
+      background-color: #FFA500;
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+      border-radius: 0; }
+  .main .guarantee {
+    margin-top: 3em;
+    margin-bottom: 3em; }
+    .main .guarantee .text {
+      margin-bottom: 2em; }
+      .main .guarantee .text .h1 {
+        font-family: "Roboto", sans-serif;
+        color: #000; }
+    .main .guarantee .texto {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 1.3em;
+      color: #FFA500; }
+    .main .guarantee img {
+      width: 65%; }
+  .main .ourwork-gallery .text {
+    margin-bottom: 1em; }
+    .main .ourwork-gallery .text .h2 {
+      color: #FFA500; }
+    .main .ourwork-gallery .text .h1 {
+      font-family: "Roboto", sans-serif; }
+  .main .ourwork-gallery .gallery {
+    overflow: hidden; }
+    .main .ourwork-gallery .gallery .foto {
+      width: 25%;
+      float: left; }
+      .main .ourwork-gallery .gallery .foto img {
+        width: 100%;
+        max-width: 300px;
+        height: 14.375em;
+        vertical-align: top; }
+      .main .ourwork-gallery .gallery .foto .descripcion {
+        display: inline-block;
+        position: relative; }
+        .main .ourwork-gallery .gallery .foto .descripcion span {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          text-align: center;
+          transform: translate(-50%, -50%);
+          display: none; }
+          .main .ourwork-gallery .gallery .foto .descripcion span .title {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            color: white; }
+          .main .ourwork-gallery .gallery .foto .descripcion span .short-description {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            color: white; }
+        .main .ourwork-gallery .gallery .foto .descripcion:hover {
+          background-color: #000; }
+          .main .ourwork-gallery .gallery .foto .descripcion:hover span {
+            display: block; }
+          .main .ourwork-gallery .gallery .foto .descripcion:hover img {
+            opacity: 0.5;
+            cursor: pointer; }
+  .main .modal {
+    display: none;
+    position: fixed;
+    z-index: 60;
+    padding-top: 140px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9); }
+  .main .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px; }
+  .main #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px; }
+  .main .modal-content,
+  .main #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s; }
+  .main .close {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 50; }
+    .main .close:focus, .main .close:hover {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer; }
+  .main .customers {
+    margin-top: 2em; }
+    .main .customers .text {
+      z-index: 40;
+      margin-bottom: -4em; }
+      .main .customers .text .h2 {
+        color: #FFA500; }
+      .main .customers .text .h1 {
+        color: #000;
+        font-family: "Roboto", sans-serif; }
+    .main .customers .imagen img {
+      width: 85%; }
+  .main .contact {
+    background-color: whitesmoke;
+    padding-bottom: 1em; }
+    .main .contact .text {
+      margin-bottom: 1em; }
+      .main .contact .text .h2 {
+        color: #FFA500; }
+      .main .contact .text .h1 {
+        font-family: "Roboto", sans-serif; }
+      .main .contact .text .h7 {
+        padding-bottom: 1.2em; }
+    .main .contact .form {
+      padding-bottom: 1em; }
+      .main .contact .form .boton {
+        background: #6F6D6D;
+        border-radius: 0;
+        margin-top: 1em;
+        color: #fff;
+        font-family: "Roboto", sans-serif; }
+    .main .contact .contacto img {
+      width: 60%; }
+    .main .contact .contacto .texto {
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 1.5em;
+      text-align: left;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500; }
+    .main .contact .contacto .icono {
+      padding-top: 0.2em; }
+      .main .contact .contacto .icono img {
+        width: 65px; }
+    .main .contact .contacto .correo {
+      padding-top: 0.5em; }
+
+footer {
+  padding-top: 2.5em;
+  background-color: #3c3c3c;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  footer .social .logo img {
+    width: 250px;
+    padding-bottom: 2em; }
+  footer .social .icons-social {
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    flew-wrap: wrap;
+    list-style: none;
+    width: 100%; }
+    footer .social .icons-social .icon1 {
+      width: 20%; }
+    footer .social .icons-social .icon2 {
+      width: 20%; }
+    footer .social .icons-social .icon3 {
+      width: 20%; }
+    footer .social .icons-social .icon4 {
+      width: 20%; }
+    footer .social .icons-social .icon5 {
+      width: 20%; }
+    footer .social .icons-social .icon1 img,
+    footer .social .icons-social .icon2 img,
+    footer .social .icons-social .icon3 img,
+    footer .social .icons-social .icon4 img,
+    footer .social .icons-social .icon5 img {
+      width: 50%; }
+    footer .social .icons-social .icon1 .text,
+    footer .social .icons-social .icon2 .text,
+    footer .social .icons-social .icon3 .text,
+    footer .social .icons-social .icon4 .text,
+    footer .social .icons-social .icon5 .text {
+      margin-top: 0.5em;
+      color: #2f7e7d;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700; }
+  footer .social .text .titulo {
+    margin-left: 1em;
+    color: #fff;
+    font-family: "Roboto", sans-serif; }
+  footer .social .copyrights {
+    margin-top: 1em;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    text-align: left; }
+  footer .social .sign {
+    margin-top: -1em;
+    color: #FFA500;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em; }
+    footer .social .sign a {
+      color: #fff;
+      font-weight: 500; }
+      footer .social .sign a:hover {
+        text-decoration: none; }
+
+@media screen and (max-width: 1170px) {
+  header .menu .logo {
+    margin-left: 3em;
+    margin-right: 3em; } }
+@media screen and (max-width: 1045px) {
+  header .menu .nav-item {
+    margin-right: 0em; } }
+@media screen and (max-width: 991px) {
+  header .menu {
+    height: 75px;
+    background: rgba(34, 34, 34, 0.75); }
+    header .menu .first {
+      border-top: 3px solid #FFA500;
+      margin-top: 1.1em; }
+    header .menu .logo {
+      margin-left: 0.5em; }
+    header .menu .nav-item {
+      background-color: #252525; }
+      header .menu .nav-item .nav-link {
+        text-shadow: none; }
+
+  .main .banner {
+    height: 652px;
+    padding-top: 7em;
+    background-size: 100% 100%; }
+    .main .banner .center .boton .boton1 {
+      margin-bottom: 1.5em;
+      margin-top: 3em;
+      margin-right: 0em;
+      margin-left: 0em;
+      font-size: 1.1em;
+      font-weight: 500; }
+  .main .services .carousel1 .carousel-inner img {
+    margin: 0 auto;
+    width: 90%; }
+  .main .services2 .imagen {
+    margin-top: 5em; }
+    .main .services2 .imagen img {
+      max-width: 100%;
+      height: 300px; }
+  .main .guarantee img {
+    width: 45%; }
+
+  footer .social .logo img {
+    width: 250px; } }
+@media screen and (max-width: 768px) {
+  .main .banner {
+    padding-top: 10em; }
+    .main .banner .center .boton .boton1 {
+      margin-bottom: 1.5em;
+      margin-top: 1.5em;
+      font-size: 1em;
+      font-weight: 500; }
+    .main .banner .center .big {
+      font-size: 3em; }
+    .main .banner .center .medium {
+      font-size: 2em; }
+    .main .banner .center .small {
+      font-size: 1em; }
+  .main .whatwedo {
+    padding-top: 0em;
+    padding-bottom: 0.5em; }
+    .main .whatwedo .texto .h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em; }
+    .main .whatwedo .texto .h2 {
+      font-size: 1.5em; }
+    .main .whatwedo .texto .text {
+      font-size: 0.93em; }
+  .main .services .text {
+    margin-bottom: 0.5em; }
+    .main .services .text .h2 {
+      font-size: 1.5em; }
+    .main .services .text .h1 {
+      font-size: 2em; }
+  .main .services .carousel2 .carousel-inner img {
+    margin: 0 auto;
+    width: 80%; }
+  .main .services2 {
+    padding-top: 1em;
+    padding-bottom: 0em; }
+    .main .services2 .titulo {
+      font-size: 2em;
+      text-align: center; }
+    .main .services2 .texto {
+      font-size: 0.93em; }
+    .main .services2 .boton {
+      display: flex;
+      justify-content: center; }
+      .main .services2 .boton .boton1 {
+        margin-bottom: 2em;
+        font-size: 0.93em; }
+  .main .guarantee {
+    margin-top: 1em;
+    margin-bottom: 1em; }
+    .main .guarantee .text {
+      margin-bottom: 1em; }
+      .main .guarantee .text .h1 {
+        font-size: 2em; }
+    .main .guarantee .texto {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 1.3em;
+      color: #FFA500; }
+    .main .guarantee img {
+      width: 45%; }
+  .main .ourwork-gallery .text .h2 {
+    font-size: 1.5em; }
+  .main .ourwork-gallery .text .h1 {
+    font-size: 2em; }
+  .main .ourwork-gallery .gallery .foto {
+    margin: 2px;
+    text-align: center;
+    width: 48.5%; }
+    .main .ourwork-gallery .gallery .foto img {
+      height: 12em; }
+  .main .modal {
+    padding-top: 200px; }
+  .main .modal-content {
+    width: 100%; }
+  .main .customers {
+    margin-top: 1em; }
+    .main .customers .text {
+      margin-bottom: -1em; }
+      .main .customers .text .h2 {
+        font-size: 1.5em; }
+      .main .customers .text .h1 {
+        font-size: 2em; }
+    .main .customers .imagen img {
+      width: 100%;
+      height: 150px; }
+  .main .contact {
+    margin-top: 2em; }
+    .main .contact .text .h2 {
+      font-size: 1.5em; }
+    .main .contact .text .h1 {
+      font-size: 2em; }
+
+  footer .social .logo img {
+    width: 200px; }
+  footer .social .text .titulo {
+    font-size: 0.9em; }
+  footer .social .icons-social {
+    padding-top: 0.5em; }
+    footer .social .icons-social .icon1 img,
+    footer .social .icons-social .icon2 img,
+    footer .social .icons-social .icon3 img,
+    footer .social .icons-social .icon4 img,
+    footer .social .icons-social .icon5 img {
+      width: 100%; }
+  footer .social .copyrights {
+    font-size: 0.6em; }
+  footer .social .sign {
+    font-size: 0.55em; } }
+@media screen and (max-width: 400px) {
+  .main .banner .center .boton .boton1 {
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    font-size: 1em;
+    font-weight: 500; }
+  .main .banner .center .big {
+    font-size: 2em; }
+  .main .banner .center .medium {
+    font-size: 1.4em; }
+  .main .banner .center .small {
+    font-size: 0.8em; }
+
+  header .menu .logo {
+    margin-left: 0.5em; }
+    header .menu .logo img {
+      width: 130px; }
+
+  footer .social .logo img {
+    width: 150px; }
+  footer .social .copyrights {
+    font-size: 0.5em; }
+  footer .social .text .titulo {
+    margin-left: 0em;
+    font-size: 0.8em; } }
+@media screen and (max-width: 360px) {
+  .main .banner {
+    height: 450px;
+    padding-top: 6.5em; }
+  .main .services .text {
+    margin-bottom: 0.5em; }
+    .main .services .text .h2 {
+      font-size: 1.5em; }
+    .main .services .text .h1 {
+      font-size: 2em; }
+  .main .services .carousel2 .carousel-inner img {
+    margin: 0 auto;
+    width: 95%; }
+  .main .ourwork-gallery .gallery .foto {
+    text-align: center;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    width: 100%; }
+    .main .ourwork-gallery .gallery .foto img {
+      margin: 0; }
+
+  footer .social .logo img {
+    padding-top: 0em; } }
+
+/*# sourceMappingURL=estilos.css.map */

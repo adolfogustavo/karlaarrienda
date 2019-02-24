@@ -2,16 +2,32 @@
 <html>
      <head>
           <title>How to Send an Email with Attachment in Codeigniter</title>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <meta name="viewport" content="width:device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
+          <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.css"/>
+          <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css"/>
+          <link rel="stylesheet" href="<?php site_url('../assets/css/bootstrap.css'); ?>">
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/estilos.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
      </head>
+     <style>
+          .title{
+               color: #000;
+               text-align: center;
+          }
+          .subtitle{
+               text-align: center;
+          }
+     </style>
      <body>
      <br />
      <div class="container">
           <div class="row">
                <div class="col-md-8" style="margin:0 auto; float:none;">
-               <h3 align="center">How to Send an Email with Attachment in Codeigniter</h3>
+               <h3 class="title">How to Send an Email with Attachment in Codeigniter</h3>
                <br />
                          <?php
                          if($this->session->flashdata("message"))
@@ -23,9 +39,9 @@
                          ";
                          }
                          ?>
-               <h4 align="center">Programmer Register Here</h4>
+               <h4 class="subtitle">Programmer Register Here</h4>
                <br />
-                    <form method="post" action="<?php echo base_url(); ?>sendemail/send" enctype="multipart/form-data">
+                    <form method="post" action="<?php echo base_url(); ?>/index.php/sendemail/send" enctype="multipart/form-data">
                          <div class="row">
                               <div class="col-md-6">
                                    <div class="form-group">

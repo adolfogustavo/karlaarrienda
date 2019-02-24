@@ -1,12 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Sendemail extends CI_Controller {
+class Sinrut extends CI_Controller {
 
     public function index()
     {
         $this->load->library('upload');
-        $this->load->view('sendemail');
+        $this->load->view('sinrut.php');
         $this->load->helper('url');
     }
 
