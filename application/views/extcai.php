@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
      <head>
-          <title>Aplicación para arrendar propiedad - Extranjero sin rut</title>
+          <title>Aplicación para arrendar propiedad - Extranjero con aval trabajador independiente</title>
           <meta name="viewport" content="width:device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
           <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.css"/>
 		<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css"/>
@@ -17,7 +17,7 @@
 		<div class="logo text-center">
 			<img src="<?php echo base_url(); ?>assets/img/karlaarriendalogo.jpg" width="30%">
 		</div>
-		<form method="post" id="validate-form" action="<?php echo base_url(); ?>/index.php/sinrut/send" enctype="multipart/form-data">
+		<form method="post" id="validate-form" action="<?php echo base_url(); ?>/index.php/extcai/send" enctype="multipart/form-data">
 			<div class="container">
 				<!-- Alert when file is not valid or another alert -->
 				<div class="col-12">
@@ -87,31 +87,31 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-4 col-md-6 col-12 text-center">
-							<div class="subtitle">Titulo profesional <span class="obligatorio">*</span></div>
+							<div class="subtitle pb-2">Titulo profesional <span class="obligatorio">*</span></div>
 							<label for="file-upload" class="subir"><i class="fas fa-cloud-upload-alt"></i> Seleccione PDF</label>
 							<input id="file-upload" onchange='cambiar()' type="file" style='display: none;' name="userfile[]" accept=".pdf" required/>
 							<div id="info" class="pt-3"></div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-12 text-center">
-							<div class="subtitle">PDI <span class="obligatorio">*</span></div>
+							<div class="subtitle pb-2">PDI <span class="obligatorio">*</span></div>
 							<label for="file-upload-2" class="subir"><i class="fas fa-cloud-upload-alt"></i> Seleccione PDF</label>
 							<input id="file-upload-2" onchange='cambiar_2()' type="file" style='display: none;' name="userfile[]" accept=".pdf" required/>
 							<div id="info-2" class="pt-3"></div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-12 text-center">
-							<div class="subtitle">Contrato de trabajo</div>
+							<div class="subtitle pb-2">Contrato de trabajo</div>
 							<label for="file-upload-3" class="subir"><i class="fas fa-cloud-upload-alt"></i> Seleccione PDF</label>
 							<input id="file-upload-3" onchange='cambiar_3()' type="file" style='display: none;' name="userfile[]" accept=".pdf" required/>
 							<div id="info-3" class="pt-3"></div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-12 text-center">
-							<div class="subtitle">Pasaporte <span class="obligatorio">*</span></div>
+							<div class="subtitle pb-2">Pasaporte <span class="obligatorio">*</span></div>
 							<label for="file-upload-4" class="subir"><i class="fas fa-cloud-upload-alt"></i> Seleccione PDF</label>
 							<input id="file-upload-4" onchange='cambiar_4()' type="file" style='display: none;' name="userfile[]" accept=".pdf" required/>
 							<div id="info-4" class="pt-3"></div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-12 text-center">
-							<div class="subtitle">Visa democrática o solicitud de visa</div>
+							<div class="subtitle pb-2">Visa democrática o solicitud de visa</div>
 							<label for="file-upload-5" class="subir"><i class="fas fa-cloud-upload-alt"></i> Seleccione PDF</label>
 							<input id="file-upload-5" onchange='cambiar_5()' type="file" style='display: none;' name="userfile[]" accept=".pdf" required/>
 							<div id="info-5" class="pt-3"></div>
@@ -162,34 +162,40 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-4 col-md-6 col-12 text-center">
-							<div class="subtitle">Titulo profesional <span class="obligatorio">*</span></div>
+							<div class="subtitle pb-2">RUT por ambos lados<span class="obligatorio">*</span></div>
 							<label for="file-upload-6" class="subir"><i class="fas fa-cloud-upload-alt"></i> Seleccione PDF</label>
 							<input id="file-upload-6" onchange='cambiar_6()' type="file" style='display: none;' name="userfile[]" accept=".pdf" required/>
 							<div id="info-6" class="pt-3"></div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-12 text-center">
-							<div class="subtitle">PDI <span class="obligatorio">*</span></div>
+							<div class="subtitle pb-2">Boletas de honorarios (6 últimos meses)<span class="obligatorio">*</span></div>
 							<label for="file-upload-7" class="subir"><i class="fas fa-cloud-upload-alt"></i> Seleccione PDF</label>
 							<input id="file-upload-7" onchange='cambiar_7()' type="file" style='display: none;' name="userfile[]" accept=".pdf" required/>
 							<div id="info-7" class="pt-3"></div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-12 text-center">
-							<div class="subtitle">Contrato de trabajo</div>
+							<div class="subtitle pb-2">Documento constitución de empresa<span class="obligatorio">*</span></div>
 							<label for="file-upload-8" class="subir"><i class="fas fa-cloud-upload-alt"></i> Seleccione PDF</label>
-							<input id="file-upload-8" onchange='cambiar_8()' type="file" style='display: none;' name="userfile[]" accept=".pdf"/>
-							<div id="info-8" class="pt-3"></div>
+                                   <input id="file-upload-8" onchange='cambiar_8()' type="file" style='display: none;' name="userfile[]" accept=".pdf" required/>
+                                   <div id="info-8" class="pt-3"></div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-12 text-center">
-							<div class="subtitle">Pasaporte <span class="obligatorio">*</span></span></div>
+							<div class="subtitle pb-2">Dicom Platinum 360 empresa<span class="obligatorio">*</span></span></div>
 							<label for="file-upload-9" class="subir"><i class="fas fa-cloud-upload-alt"></i> Seleccione PDF</label>
 							<input id="file-upload-9" onchange='cambiar_9()' type="file" style='display: none;' name="userfile[]" accept=".pdf" required/>
 							<div id="info-9" class="pt-3"></div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 text-center">
-							<div class="subtitle">Visa democrática o solicitud de visa</div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-12 text-center">
+							<div class="subtitle pb-2">Dicom Platinum 360 personal<span class="obligatorio">*</span></span></div>
 							<label for="file-upload-10" class="subir"><i class="fas fa-cloud-upload-alt"></i> Seleccione PDF</label>
-							<input id="file-upload-10" onchange='cambiar_10()' type="file" style='display: none;' name="userfile[]" accept=".pdf"/>
+							<input id="file-upload-10" onchange='cambiar_10()' type="file" style='display: none;' name="userfile[]" accept=".pdf" required/>
 							<div id="info-10" class="pt-3"></div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-12 text-center">
+							<div class="subtitle pb-2">Declaración de IVA (6 últimos meses)<span class="obligatorio">*</span></span></div>
+							<label for="file-upload-11" class="subir"><i class="fas fa-cloud-upload-alt"></i> Seleccione PDF</label>
+							<input id="file-upload-11" onchange='cambiar_11()' type="file" style='display: none;' name="userfile[]" accept=".pdf" required/>
+							<div id="info-11" class="pt-3"></div>
 						</div>
 					</div>
 					<hr>
@@ -211,6 +217,6 @@
 	<script src="<?php echo base_url(); ?>assets/js/jquery.validate.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/additional-methods.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/validations.js"></script>
-	<script src="<?php echo base_url(); ?>assets/js/inputchange-sinrut.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/inputchange-extcai.js"></script>
 	</body>
 </html>

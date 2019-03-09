@@ -1,4 +1,78 @@
 body{
-     background-color: #084B8A;
+     font-family: Roboto;
+     font-weight: 500;
+     background-color: #fff;
      /* background-color: #fff; */
 }
+
+.row-karla{
+     background-color: #FAFAF6; 
+     padding: 20px;
+     margin: 8px;
+     border-radius: 10px;
+}
+
+.my-error-class{
+     color: #FF0000;
+}
+/* ALERTAS  */
+ .alert-personal {
+     position: relative;
+     padding: 0.50rem 1.25rem;
+     margin-bottom: 1rem;
+     border: 1px solid transparent;
+     border-radius: 0.25rem;
+ }
+
+ /* INPUT  */
+.subir{
+     padding: 5px 10px;
+     background: #2E9AFE;
+     color:#fff;
+     border:0px solid #fff;
+     border-radius: 10px;
+ }
+  
+ .subir:hover{
+     color:#fff;
+     background: #0174DF;
+     cursor: pointer;
+ }
+
+ /* BOTON ENVIAR SOLICITUD  */
+
+ .btn-send {
+     font-size: 20px;
+     border-radius: 10px;
+     padding-left: 40px;
+     padding-right: 40px;
+ }
+
+ /* Datos obligatorios */
+ .obligatorio{
+     color: red;
+     font-weight: bold;
+ }
+
+ /* Letra sin negrita  */
+ .normal{
+     font-weight: 400;
+     color: #000;
+ }
+
+ .h2{
+     color: #2E9AFE;  
+ }
+
+ @media (max-width: 900px) {
+    img{
+        width: 40%;
+    }
+  }
+
+ @media (max-width: 600px) {
+    img{
+        width: 52%;
+    }
+  }
+

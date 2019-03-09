@@ -1,12 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Sinrut extends CI_Controller {
+class Dependientescad extends CI_Controller {
 
     public function index()
     {
         $this->load->library('upload');
-        $this->load->view('sinrut.php');
+        $this->load->view('dependientescad.php');
         $this->load->helper('url');
     }
 
@@ -47,9 +47,9 @@ class Sinrut extends CI_Controller {
         if(is_array($file_data))
         {
             $message = '
-            <h4><strong>Formulario:</strong> Extranjero con aval misma condición</h4>
+            <h4><strong>Formulario:</strong> Trabajador dependiente con aval misma condición</h4>
             <br>
-            <h3 align="center">Datos del solicitante</h3>
+            <h3 align="center">Datos del solicitante - Trabajador dependiente</h3>
             <table border="1" width="100%" cellpadding="5">
             <tr>
             <td width="30%">Propiedad a la que postula el solicitante</td>
@@ -81,7 +81,7 @@ class Sinrut extends CI_Controller {
             </tr>
             </table>
             <br>
-            <h3 align="center">Datos del aval - Extranjero recién llegado</h3>
+            <h3 align="center">Datos del aval - Trabajador dependiente</h3>
             <table border="1" width="100%" cellpadding="5">
             <td width="30%">Nombre</td>
             <td width="70%">'.$this->input->post("name2").' '.$this->input->post("lastname2").'</td>
@@ -120,13 +120,13 @@ class Sinrut extends CI_Controller {
             }else {
 
                 $this->session->set_flashdata('message', 'No se pudo enviar su solicitud, inténtelo nuevamente');
-                redirect('index.php/sinrut');
+                redirect('index.php/dependientescad');
             }
             }
             else
             {
                 $this->session->set_flashdata('message', 'No se pudo enviar su solicitud, asegúrese que sus archivos estén en formato PDF');
-                redirect('index.php/sinrut');
+                redirect('index.php/dependientescad');
             }
     }
 
