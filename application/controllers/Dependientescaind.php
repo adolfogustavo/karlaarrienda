@@ -17,10 +17,10 @@ class Dependientescaind extends CI_Controller {
 
         $this->load->library('email');
         $config['upload_path'] = realpath(FCPATH.'uploads/');
-        $config['allowed_types'] = 'pdf';
-        $config['max_size'] = '10000';
-        $config['max_width'] = '1024';
-        $config['max-height'] = '768';
+        // $config['allowed_types'] = 'pdf';
+        // $config['max_size'] = '10000';
+        // $config['max_width'] = '1024';
+        // $config['max-height'] = '768';
 
         $files = $_FILES;
         $filesCount = count($files['userfile']['name']);
