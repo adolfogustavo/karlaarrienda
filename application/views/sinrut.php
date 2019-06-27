@@ -19,7 +19,7 @@
 		<div class="logo text-center">
 			<img src="<?php echo base_url(); ?>assets/img/karlaarriendalogo.jpg" width="30%">
 		</div>
-		<form method="post" id="validate-form" action="<?php echo base_url(); ?>/index.php/sinrut/send" enctype="multipart/form-data">
+		<form method="post" id="validate-form" action="<?php echo base_url(); ?>index.php/sinrut/send" enctype="multipart/form-data">
 			<div class="container">
 				<!-- Alert when file is not valid or another alert -->
 				<div class="col-12">
